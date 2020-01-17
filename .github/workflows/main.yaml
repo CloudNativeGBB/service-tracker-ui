@@ -1,4 +1,4 @@
-name: Docker Build for Master
+name: Docker Build for GH and DH
 on: [push]
 jobs:
   build:
