@@ -1,7 +1,13 @@
 {
-  "name": "gbb-kubernetes-hackfest-webui-dashboard",
+  "name": "@cloudnativegbb/service-tracker-ui",
   "version": "1.0.0",
-  "private": true,
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CloudNativeGBB/arcdemo-service-tracker-ui.git"
+  },
   "scripts": {
     "local": "vue-cli-service serve",
     "dev": "vue-cli-service serve",
