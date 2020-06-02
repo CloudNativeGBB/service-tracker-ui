@@ -22,3 +22,5 @@ jobs:
           registry: docker.pkg.github.com
           repository: cloudnativegbb/arcdemo-service-tracker-ui
           tags: latest
+          tag_with_ref: true
+          add_git_labels: true
