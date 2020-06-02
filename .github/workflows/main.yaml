@@ -1,12 +1,12 @@
 # This workflow will run tests using node and then publish a package for the UI to GitHub Packages when a release is created
 # For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
 
-name: Service Tracker UI Package
-
+name: Package Service Tracker UI
 on: [push]
 
 jobs:
-  build:
+  build-and-publish:
+    name: Build and Publish App
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,18 +14,11 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
-      - run: npm run build
-
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - run: npm run build --if-present
+      - uses: docker/build-push-action@v1
         with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          repository: https://github.com/CloudNativeGBB/arcdemo-service-tracker-ui
+          tag_with_ref: true
