@@ -25,9 +25,8 @@ jobs:
       - run: npm run build --if-present
       - uses: docker/build-push-action@v1
         with:
-          username: ${{ github.actor }}
-          password: ${{ github.token }}
-          registry: docker.pkg.github.com
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}  
           repository: cloudnativegbb/arcdemo-service-tracker-ui/${{ env.IMAGE_NAME }}
           tags: latest
           tag_with_ref: true
