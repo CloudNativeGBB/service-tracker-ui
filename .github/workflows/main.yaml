@@ -15,7 +15,7 @@ on:
 jobs:
   build-and-publish:
     env:
-      IMAGE_NAME: service-tracker-web
+      IMAGE_NAME: service-tracker-ui
     name: Build and Publish App
     runs-on: ubuntu-latest
     steps:
@@ -28,7 +28,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ github.token }}
           registry: docker.pkg.github.com
-          repository: cloudnativegbb/arcdemo-service-tracker-ui/${{ env.IMAGE_NAME }}
+          repository: cloudnativegbb/${{ env.IMAGE_NAME }}
           tags: latest
           tag_with_ref: true
           add_git_labels: true
