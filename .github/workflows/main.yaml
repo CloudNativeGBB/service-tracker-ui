@@ -25,10 +25,9 @@ jobs:
       - run: npm run build --if-present
       - uses: docker/build-push-action@v1
         with:
-          username: ${{ github.actor }}
-          password: ${{ github.token }}
-          registry: docker.pkg.github.com
-          repository: cloudnativegbb/${{ env.IMAGE_NAME }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}  
+          repository: msftgbb/${{ env.IMAGE_NAME }}
           tags: latest
           tag_with_ref: true
           add_git_labels: true
