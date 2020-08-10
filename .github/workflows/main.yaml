@@ -2,11 +2,12 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
 
 name: Build and push image to Docker
-# this is so that pushing the Docker image has to happen after the tag
 on:
+  # Trigger the workflow on push or pull request,
+  # but only for the master branch
   push:
     branches:
-      - refs/tags/*
+      - master
 
 jobs:
   build-and-publish:
