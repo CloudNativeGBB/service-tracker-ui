@@ -6,7 +6,7 @@ name: Build and push image to Docker
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - '*'
 
 jobs:
   build-and-publish:
