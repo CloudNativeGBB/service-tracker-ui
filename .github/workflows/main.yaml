@@ -5,8 +5,8 @@ name: Build and push image to Docker
 # this is so that pushing the Docker image has to happen after the tag
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - refs/tags/*
 
 jobs:
   build-and-publish:
