@@ -8,6 +8,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build-and-publish:
@@ -32,6 +35,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
         id: bump_version
       # build and push image to Docker Hub
+      - name: Echo tag version
+        run: echo ${{ steps.bump_version.outputs.new_version }}
       - uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
