@@ -1,4 +1,4 @@
-# ![alt text](../../assets/img/msft_logo_24.png "Microsoft Intelligent Cloud Global Blackbelt") &nbsp;web-ui <sup style='font-size:12px'>&nbsp;&nbsp;kubernetes-hackfest/app/web-ui</sup>
+# ![alt text](https://github.com/CloudNativeGBB/arcdemo-service-tracker-ui/blob/master/src/assets/img/msft_logo_24.png "Microsoft Intelligent Cloud Global Blackbelt") &nbsp;web-ui <sup style='font-size:12px'>&nbsp;&nbsp;kubernetes-hackfest/app/web-ui</sup>
 
 Requirements
 ----------
