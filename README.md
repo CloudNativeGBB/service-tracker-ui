@@ -7,8 +7,6 @@ Requirements
 * [npm](https://npm.org)
 * [Vue CLI](https://vuejs.org)
 
-
-
 Run it locally
 ---------- 
 
@@ -23,7 +21,6 @@ npm install
 ```bash
 npm run dev
 ```
-
 
 Service setup <sup style='font-size:11px'>or adding services</sup>
 ----------
