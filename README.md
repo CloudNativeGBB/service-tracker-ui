@@ -21,7 +21,7 @@ npm install
 npm run dev
 ```
 
-Service setup <sup style='font-size:11px'>or adding services</sup>
+Service setup 
 ----------
 
 [Webpack Proxy Config](./vue.config.js)
