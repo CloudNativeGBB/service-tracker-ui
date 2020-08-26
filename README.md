@@ -4,7 +4,6 @@ Requirements
 ----------
 > service-tracker-ui uses the following 
 * [Nodejs](https://nodejs.org)
-* [npm](https://npm.org)
 * [Vue CLI](https://vuejs.org)
 
 Run it locally
