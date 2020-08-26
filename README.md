@@ -26,7 +26,6 @@ Service setup <sup style='font-size:11px'>or adding services</sup>
 
 [Webpack Proxy Config](./vue.config.js)
 
-This lists the proxy location for services
 
 > e.g., &nbsp;&nbsp; ***/api/flights/inair*** 
 ```javascript
