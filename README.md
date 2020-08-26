@@ -29,11 +29,11 @@ Service setup
 
 > e.g., &nbsp;&nbsp; ***/api/flights/inair*** 
 ```javascript
-    '/api/flights/inair':{
+    '/api/flights/santa-claus':{
         target: 'http://localhost:8004',
         changeOrigin: true,
         pathRewrite: {
-          '^/api/flights/inair': '/api/stats/flights/inair'
+          '^/api/flights/santa-claus': '/api/stats/flights/santa-claus'
         }
     }
 ```
