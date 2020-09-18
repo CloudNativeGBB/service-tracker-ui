@@ -2,7 +2,7 @@
   <div>
     <div class="row">
           <div class="col-md-6 col-xl-3">
-            <h6>SERVICE STATUS (Azure Arc)</h6>
+            <h6>CURRENT SERVICE STATUS (Azure Arc)</h6>
           </div>
     </div>
 
