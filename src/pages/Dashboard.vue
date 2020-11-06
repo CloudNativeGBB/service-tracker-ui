@@ -2,7 +2,7 @@
   <div>
     <div class="row">
           <div class="col-md-6 col-xl-3">
-            <h6>STATUS (Azure Arc Demo)</h6>
+            <h6>STATUS (DEMO 11/5)</h6>
           </div>
     </div>
 
